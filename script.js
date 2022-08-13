@@ -15,3 +15,11 @@ const madLibGenerator = (adjective, noun, verb, adverb) =>
     'My ' + adjective + ' ' + noun + ' is ' + verb + ' ' + adverb + '.';
 
 console.log(madLibGenerator(adjectives[random[0]], nouns[random[1]], verbs[random[2]], adverbs[random[3]]));
+
+/*const buttonElement = document.getElementByTagName('button');
+const messageToDisplay = document.querySelector('p');
+console.log(messageToDisplay);
+
+buttonElement.onclick = () =>  messageToDisplay.innerText =
+       madLibGenerator(adjectives[random[0]], nouns[random[1]], verbs[random[2]], adverbs[random[3]]);
+alert('I got this!'); */
