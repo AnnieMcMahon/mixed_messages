@@ -14,16 +14,7 @@ while (counter < 5) {
 const madLibGenerator = (adjective, noun, verb, adverb) => 
     'My ' + adjective + ' ' + noun + ' is ' + verb + ' ' + adverb + '.';
 
-console.log(madLibGenerator(adjectives[random[0]], nouns[random[1]], verbs[random[2]], adverbs[random[3]]));
-if (typeof window !== 'undefined') {
-    console.log('You are on the browser')
-  } else {
-    console.log('You are on the server')
-  }
 let buttonElement = document.getElementById('button');
-const messageToDisplay = document.querySelector('p');
-console.log(messageToDisplay);
-
+let messageToDisplay = document.querySelector('p');
 buttonElement.onclick = () =>  messageToDisplay.innerText =
        madLibGenerator(adjectives[random[0]], nouns[random[1]], verbs[random[2]], adverbs[random[3]]);
-alert('I got this!'); 
