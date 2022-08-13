@@ -11,4 +11,7 @@ while (counter < 5) {
     counter++;
 }
 
-console.log('My ' + adjectives[random[0]] + ' ' + nouns[random[1]] + ' is ' + verbs[random[2]] + ' ' + adverbs[random[3]] + '.');
+const madLibGenerator = (adjective, noun, verb, adverb) => 
+    'My ' + adjective + ' ' + noun + ' is ' + verb + ' ' + adverb + '.';
+
+console.log(madLibGenerator(adjectives[random[0]], nouns[random[1]], verbs[random[2]], adverbs[random[3]]));
