@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Mad Lib Generator</title>
-    <script defer src="./script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Mad Lib Generator</title>
+  <script defer src="./script.js"></script>
 </head>
+
 <body>
-    <div id="content">
+  <div id="content">
     <h1>Mad Lib Generator</h1>
-    <p>Click on the button to generate a mad lib sentence.</p>
-    <button id="button">Generate Message</button>
-    </div>
+    <form>
+      <label for="adjective-choice">Adjective:</label>
+      <input list="adjectives" id="adjective-choice" name="adjective-choice">
+      <datalist id="adjectives">
+        <option value="gross">
+        <option value="awesome">
+        <option value="playful">
+      </datalist>
+      <label for="noun-choice">Noun:</label>
+      <input list="nouns" id="noun-choice" name="noun-choice">
+      <datalist id="nouns">
+        <option value="boyfriend">
+        <option value="baby">
+        <option value="chameleon">
+      </datalist>
+      <label for="verb-choice">Verb:</label>
+      <input list="verbs" id="verb-choice" name="verb-choice">
+      <datalist id="verbs">
+        <option value="running">
+        <option value="playing">
+        <option value="spinning around">
+      </datalist>
+      <label for="adverb-choice">Adverb:</label>
+      <input list="adverbs" id="adverb-choice" name="adverb-choice">
+      <datalist id="adverbs">
+        <option value="willingly">
+        <option value="wildly">
+        <option value="stupidly">
+      </datalist>
+    </form>
+    <p id="sentence">Choose words from the list or type your own</p>
+    <button id="random">Surprise me!</button>
+    <button id="submit">Generate MadLib</button>
+    <button id="reset">Reset</button>
+  </div>
 </body>
+
 </html>
